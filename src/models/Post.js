@@ -1,5 +1,5 @@
 const { DataTypes } = require('sequelize')
-const db = require('../src/database')
+const db = require('../database')
 
 const Category = require('./Category')
 

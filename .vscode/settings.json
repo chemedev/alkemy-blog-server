@@ -15,19 +15,5 @@
     "titleBar.inactiveBackground": "#f9e64f99",
     "titleBar.inactiveForeground": "#15202b99"
   },
-  "peacock.color": "#f9e64f",
-  "sqltools.connections": [
-    {
-      "mysqlOptions": {
-        "authProtocol": "default"
-      },
-      "previewLimit": 50,
-      "server": "localhost",
-      "port": 3306,
-      "askForPassword": true,
-      "driver": "MySQL",
-      "name": "mysql",
-      "connectString": "mysql://user:user@mysql:3306/Blogs"
-    }
-  ]
+  "peacock.color": "#f9e64f"
 }

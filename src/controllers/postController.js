@@ -1,6 +1,6 @@
-const Post = require('../../models/Post')
+const Post = require('../models/Post')
 const { isValidFile } = require('../helpers')
-const Category = require('../../models/Category')
+const Category = require('../models/Category')
 const { ValidationError, ForeignKeyConstraintError } = require('sequelize')
 
 module.exports.fetchPosts = async (req, res) => {
