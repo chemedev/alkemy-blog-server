@@ -34,13 +34,7 @@ const Expense = db.define(
     },
     img: {
       type: DataTypes.STRING,
-      allowNull: true,
-      validate: {
-        contains: {
-          args: ['jpeg', 'jpg', 'png', 'webp'],
-          msg: 'Valid extensions for image upload are jpeg, jpg, png and webp.'
-        }
-      }
+      allowNull: true
     },
     categoryId: {
       type: DataTypes.INTEGER,

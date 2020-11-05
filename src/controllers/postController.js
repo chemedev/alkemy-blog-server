@@ -36,18 +36,20 @@ module.exports.createPost = async (req, res) => {
   try {
     if (req.file) {
       if (!isValidFile(req.file, true)) {
-        throw new Error(
-          'Invalid upload. Use jpg, jpeg, png or webp extensions.'
-        )
+        return res.status(406).json({
+          error: 'Invalid upload. Use jpg, jpeg, png or webp extensions',
+          data: []
+        })
       }
       req.body.img = 'http://localhost:3001/' + req.file.path
     }
 
     if (req.body.img) {
       if (!isValidFile(req.body.img)) {
-        throw new Error(
-          'Invalid upload. Use jpg, jpeg, png or webp extensions.'
-        )
+        return res.status(406).json({
+          error: 'Invalid upload. Use jpg, jpeg, png or webp extensions',
+          data: []
+        })
       }
     }
 
